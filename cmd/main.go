@@ -14,7 +14,7 @@ func main() {
 
 	// Create Bot with debug on
 	// Note: Please keep in mind that default logger may expose sensitive information, use in development only
-	bot, err := telego.NewBot("5810157518:AAEgr2V0GLfwb67AFsV4SLuqkkWLDJWbNSY", telego.WithDefaultDebugLogger(), telego.WithHTTPClient(&http.Client{}))
+	bot, err := telego.NewBot("token", telego.WithDefaultDebugLogger(), telego.WithHTTPClient(&http.Client{}))
 
 	if err != nil {
 		fmt.Println(err)
